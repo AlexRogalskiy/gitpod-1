@@ -7,7 +7,6 @@
 import { inResource } from "./utils";
 
 test("inResource", () => {
-
     // Given root path is a part of resources specified
     expect(inResource("/app", ["new", "app", "teams"])).toBe(true);
 
@@ -25,5 +24,4 @@ test("inResource", () => {
 
     // Both resources containing path with subdirectories
     expect(inResource("/admin/teams/someTeam/somePerson", ["/admin/teams"])).toBe(true);
-
 });

@@ -13,6 +13,5 @@ export class VolumeSnapshotCreation1651188368768 implements MigrationInterface {
         );
     }
 
-    public async down(queryRunner: QueryRunner): Promise<void> {
-    }
+    public async down(queryRunner: QueryRunner): Promise<void> {}
 }

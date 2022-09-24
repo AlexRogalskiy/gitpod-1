@@ -7,8 +7,7 @@
 import { injectable } from "inversify";
 
 @injectable()
-export abstract class AbstractComponentEnv {
-}
+export abstract class AbstractComponentEnv {}
 
 export function getEnvVar(name: string, defaultValue?: string): string {
     const value = process.env[name] || defaultValue;

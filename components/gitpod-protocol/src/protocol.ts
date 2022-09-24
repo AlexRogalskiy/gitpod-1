@@ -815,8 +815,8 @@ export interface RepositoryCloneInformation {
 
 export interface CoreDumpConfig {
     enabled?: boolean;
-	softLimit?: number;
-	hardLimit?: number;
+    softLimit?: number;
+    hardLimit?: number;
 }
 
 export interface WorkspaceConfig {

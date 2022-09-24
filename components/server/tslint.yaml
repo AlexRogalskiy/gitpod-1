@@ -5,4 +5,3 @@
 # We deliberately start with a very few selected rules to not enforce too much change at once to the grown server code base
 rules:
   no-floating-promises: true
-

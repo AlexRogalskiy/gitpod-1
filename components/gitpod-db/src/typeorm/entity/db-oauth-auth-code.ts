@@ -38,7 +38,7 @@ export class DBOAuthAuthCodeEntry implements OAuthAuthCode {
         type: "varchar",
         length: 10,
     })
-    codeChallengeMethod: CodeChallengeMethod
+    codeChallengeMethod: CodeChallengeMethod;
 
     @Column({
         type: "timestamp",

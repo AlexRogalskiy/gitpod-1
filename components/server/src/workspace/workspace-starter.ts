@@ -1410,14 +1410,16 @@ export class WorkspaceStarter {
 
         if (workspace.config.coreDump?.enabled) {
             // default core dump size is 262144 blocks (if blocksize is 4096)
-            const defaultLimit:number=1073741824;
+            const defaultLimit: number = 1073741824;
 
             const rLimitCore = new EnvironmentVariable();
             rLimitCore.setName("GITPOD_RLIMIT_CORE");
-            rLimitCore.setValue(JSON.stringify({
-                softLimit: workspace.config.coreDump?.softLimit || defaultLimit,
-                hardLimit: workspace.config.coreDump?.hardLimit || defaultLimit,
-            }));
+            rLimitCore.setValue(
+                JSON.stringify({
+                    softLimit: workspace.config.coreDump?.softLimit || defaultLimit,
+                    hardLimit: workspace.config.coreDump?.hardLimit || defaultLimit,
+                }),
+            );
             envvars.push(rLimitCore);
         }
 

@@ -62,6 +62,3 @@ Testing in prev envs and test several cases:
     After fix
 
     ![step4-wx-proxy-mem](./step4-ws-proxy-mem.png)
-
-
-
