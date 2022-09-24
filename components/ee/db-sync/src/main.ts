@@ -63,5 +63,3 @@ if(cmd) {
 } else {
     console.error("Unknown command: ", args.cmd);
 }
-
-
